@@ -1,5 +1,5 @@
 cc_library(
-    name = "utils",
+    name = "Graph",
     hdrs = glob(["*.h"]),
     includes = ["."], 
     visibility = ["//visibility:public"],
