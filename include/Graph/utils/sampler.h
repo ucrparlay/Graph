@@ -4,8 +4,7 @@
 #include <atomic>
 #include <stdexcept>
 
-namespace Graph {
-using namespace Graph;
+namespace UCRPAL {
 
 using hash_t = uint32_t;
 

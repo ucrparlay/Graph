@@ -3,8 +3,7 @@
 #include <cstring>
 #include <iostream>
 
-namespace Graph {
-using namespace Graph;
+namespace UCRPAL {
 
 template <typename ET>
 inline bool atomic_compare_and_swap(ET *a, ET oldval, ET newval) {

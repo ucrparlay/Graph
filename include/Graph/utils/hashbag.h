@@ -7,9 +7,8 @@
 #include "sampler.h"
 #include "utils.h"
 
-namespace Graph {
-using namespace Graph;
-
+namespace UCRPAL {
+    
 template <class ET>
 class hashbag {
   static constexpr size_t BLOCK_SIZE = 1 << 10;

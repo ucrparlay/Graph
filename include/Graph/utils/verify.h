@@ -10,8 +10,7 @@
 #include <iostream>
 #include <fstream>
 
-namespace Graph {
-using namespace Graph;
+namespace UCRPAL {
 
 static inline uint64_t mix64(uint64_t x) {
     x ^= x >> 33;
@@ -159,7 +158,7 @@ void process_result(const char* dumppath, const char* filepath, double t, T& res
         update_csv_cell(gbbs_path + "/benchmark.csv", graph_name, std::to_string(t), "GBBS");
         update_csv_cell(gbbs_path + "/verify.csv",    graph_name, get_hash, "GBBS");
     }
-    if (dumppath != nullptr && dumppath != "disabled") {
+    if (dumppath != nullptr && std::strcmp(dumppath, "disabled") != 0) {
         std::ofstream out(dumppath, std::ios::out|std::ios::trunc);
         for(size_t i=0;i<result.size();++i){ out<<result[i]<<","; }
         out<<"\n";

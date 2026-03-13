@@ -15,8 +15,7 @@
 #include <parlay/sequence.h>
 #include "utils.h"
 
-namespace Graph {
-using namespace Graph;
+namespace UCRPAL {
 
 class Empty {};
 
